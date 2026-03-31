@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, Send } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa';
+import { Send } from 'lucide-react';
 
  function Footer() {
   return (
@@ -22,24 +23,25 @@ import { Facebook, Instagram, Twitter, Send } from 'lucide-react';
           </p>
 
           {/* SOCIAL */}
-          <div className="flex gap-3 mt-5">
-            <div className="bg-[#1A1F2E] p-2 rounded-lg hover:bg-red-500 cursor-pointer">
-              <Facebook size={18} />
-            </div>
-            <div className="bg-[#1A1F2E] p-2 rounded-lg hover:bg-red-500 cursor-pointer">
-              <Instagram size={18} />
-            </div>
-            <div className="bg-[#1A1F2E] p-2 rounded-lg hover:bg-red-500 cursor-pointer">
-              <Twitter size={18} />
-            </div>
-          </div>
+<div className="flex gap-3 mt-5">
+  <div className="bg-[#1A1F2E] p-2 rounded-lg hover:bg-red-500 cursor-pointer">
+    <FaFacebook size={18} />
+  </div>
+  <div className="bg-[#1A1F2E] p-2 rounded-lg hover:bg-red-500 cursor-pointer">
+    <FaInstagram size={18} />
+  </div>
+  <div className="bg-[#1A1F2E] p-2 rounded-lg hover:bg-red-500 cursor-pointer">
+    <FaTwitter size={18} />
+  </div>
+</div>
+          
         </div>
 
         {/* LINKS 1 */}
         <div>
           <h2 className="text-white font-semibold mb-4">Shop</h2>
           <ul className="space-y-2 text-sm">
-            <li><Link href="#">Men</Link></li>
+            div<li><Link href="#">Men</Link></li>
             <li><Link href="#">Women</Link></li>
             <li><Link href="#">Kids</Link></li>
             <li><Link href="#">New Arrivals</Link></li>

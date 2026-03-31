@@ -1,6 +1,8 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
 
 
 const Slider = dynamic(() => import('../../components/Slider'), {
@@ -10,8 +12,9 @@ const Slider = dynamic(() => import('../../components/Slider'), {
 export default function Page() {
   return (
     <>
+    <Navbar/>
       <Slider />
-      
+      <Footer/>
     </>
   );
 }
